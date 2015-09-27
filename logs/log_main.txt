@@ -1,0 +1,16 @@
+0 http://engineering.nyu.edu/people/torsten-suel 0 2015-09-21 12:19:22 22466 200 
+1 https://www.linkedin.com/pub/torsten-suel/2/362/3a3 0 2015-09-21 12:19:22 39677 200 
+2 http://scholar.google.com/citations?user=eQUn8ugAAAAJ 0 2015-09-21 12:19:23 97184 200 
+3 https://en.wikipedia.org/wiki/Torsten_Suel 0 2015-09-21 12:19:23 35179 200 
+4 http://engineering.nyu.edu/ 1 2015-09-21 12:19:24 24998 200 
+5 http://engineering.nyu.edu/nyu-abu-dhabi 1 2015-09-21 12:19:24 18892 200 
+6 http://engineering.nyu.edu/nyu-shanghai 1 2015-09-21 12:19:24 18658 200 
+7 http://www.nyu.edu/search.directory.html 1 2015-09-21 12:19:24 38068 200 
+8 http://engineering.nyu.edu/events/calendar 1 2015-09-21 12:19:24 87118 200 
+9 http://engineering.nyu.edu/services/human-resources 1 2015-09-21 12:19:24 20508 200 
+10 http://engineering.nyu.edu/services/information-technology-systems 1 2015-09-21 12:19:24 20778 200 
+************ SUMMARY *************
+number of file downloaded: 11 
+ total size: 423526 
+ total time: 7.77807211876 
+ number of 404: 0

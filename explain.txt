@@ -1,0 +1,22 @@
+Description of crawler program:
+
+The crawler.py script queries google on the given user input. It uses a focused crawling strategy by following the top 8 results from google.
+The current program is capable of performing the following actions:
+1. querying google to fetch top results.
+2. crawling n pages from these top results using a focused strategy (priority queue)
+3. calculating score based on occurrences of query keywords on the page
+4. Outputting logs of urls and a summary
+5. downloading crawled pages
+6. Normalizing ambiguous urls
+7. Avoiding file types like audio, video, etc
+8. checking for earlier visits
+9. robot exclusion
+10. Avoiding password protected pages
+
+Possible bugs and features not yet implemented:
+1. Server not responding exception (the program faults for a while)
+2. The scoring function is not accurate (not using cosine or BM25)
+3. same files on different servers are considered as different files
+4. Socket errors
+4. Sometimes gives ‘final_page_score’ is not defined error on certain queries
+

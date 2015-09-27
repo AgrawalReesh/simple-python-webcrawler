@@ -1,0 +1,670 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        
+
+    <meta name="CMS" content="CQ" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Search</title>
+    <meta http-equiv="keywords" content="">
+
+    <meta name="author" content="NYU Web Communications" />
+    <link rel="icon" href="/common/images/favicon.ico" type="image/x-icon"/>
+
+
+    <!-- GENERAL SCRIPTS -->
+    <script type="text/javascript" src="/etc/designs/nyu/clientlibs/jquery.js"></script>
+
+    <script type="text/javascript" src="/common/js/utils.js"></script>
+
+    <!-- LIGHT BOX -->
+    <script type="text/javascript" src="/common/js/jquery.lightbox-0.5.js"></script>
+
+    <!-- TABLE SORT-->
+    <script type="text/javascript" src="/common/js/jquery.tablesorter.min.js"></script>
+    <!-- GLOBAL JS INITIALIZATION-->
+    <script type="text/javascript">
+    $(document).ready(function()
+        {
+            $("#tableSort").tablesorter();
+        }
+    );
+    </script>
+
+    <!-- GENERIC STYLE SHEETS -->
+    <link rel="stylesheet" href="/common/css/base.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/common/css/cpTemps.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/common/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/common/css/print.css" type="text/css" media="print"/>
+    
+
+    <!-- PHOTO GALLERY -->
+    <link rel="stylesheet" href="/common/css/jquery.lightbox-0.5.css" type="text/css" media="screen"/>
+
+    <!-- FORMS -->
+    <link rel="stylesheet" href="/common/css/forms.css" type="text/css" media="screen"/>
+
+    <!-- CUFON -->
+    <script type="text/javascript" src="/common/js/cufon-yui.js"></script>
+
+    <!-- Cufon: fonts -->
+    <script type="text/javascript" src="/common/js/gothamBook.js"></script>
+    <script type="text/javascript" src="/common/js/gothamMedium.js"></script>
+    <script type="text/javascript" src="/common/js/cufonConfig.js"></script>
+
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="/common/css/v60.ie8.css" type="text/css" media="screen" />
+    <![endif]-->
+
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="/common/css/v60.ie7.css" type="text/css" media="screen" />
+    <![endif]-->
+
+    <!--[if IE 6]>
+        <link rel="stylesheet" href="/common/css/v60.ie6.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="/common/js/unitpngfix.js"></script>
+        <script type="text/javascript">
+            sfHover = function() {
+                var sfEls = document.getElementById("utilities").getElementsByTagName("LI");
+                for (var i=0; i<sfEls.length; i++) {
+                    sfEls[i].onmouseover=function() {
+                        this.className+=" sfhover";
+                    }
+                    sfEls[i].onmouseout=function() {
+                        this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+                    }
+                }
+            }
+            if (window.attachEvent) window.attachEvent("onload", sfHover);
+        </script>
+    <![endif]-->
+
+        <!-- Google Analytics (publisher only) -->
+        
+            <!-- Google Analytics (Legacy Asynchronous) -->
+<script type="text/javascript">
+ var _gaq = _gaq || [];
+ var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-1592055-1']);
+  _gaq.push(['_setDomainName', 'nyu.edu']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_addIgnoredOrganic', 'www.nyu.edu']);
+  _gaq.push(['_addIgnoredOrganic', 'nyu.edu']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Google Analytics (Universal Beta) -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1592055-15', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+        
+    </head>
+    <body>
+        
+            <!-- Google Tag Manager (publisher only) -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5VD495" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VD495');</script>
+<!-- End Google Tag Manager -->
+
+        
+        <!--[if IE]>
+        <span id="screenreader_msg" class="offLeft">If you are using a Kurzweil text-to-speech reader, the <strong>Read the Web</strong> function in Firefox performs more accurately than in Internet Explorer. The Kurzweil utility was created specifically for use in Firefox. We recommend that you use Firefox.</span>
+        <![endif]-->
+        <noscript><div id="noScript">
+            <div>NYU.edu requires JavaScript be enabled in your browser in order to use important features of the site. JavaScript is either disabled or not supported by your browser. For instructions on how to enable JavaScript in your browser, <a href="http://www.nyu.edu/employees/resources-and-services/media-and-communications/digital-communications/browser-support/enable-javascript.html">click here</a>.</div>
+        </div></noscript>
+
+        <div class="adminSettings">
+</div>
+
+        <div id="masterContainer" class="cpTemps">
+            
+<span class="offLeft">New York University</span>
+
+<!-- JUMP LINKS -->
+<a class="offLeft" href="#contentWrapper">Skip to Content</a>
+<a class="offLeft" href="#searchField">Skip to Search</a>
+<a class="offLeft" href="#nav">Skip to Navigation</a>
+<a class="offLeft" href="#subnav">Skip to Sub Navigation</a>
+
+<!-- BEGIN HEADER CONTAINER -->
+	<div id="headerContainer">	
+		
+		<!-- BEGIN UTILITIES CONTAINER -->
+		<div class="utilsContainer">			
+			<div id="utilities" class="utils">
+				<!-- ROLES -->			
+				<div class="nyuRoles">
+            <!-- ROLES -->
+            <div class="login">
+             <p>
+                 <a href="http://home.nyu.edu" onclick="_gaq.push(['_trackEvent', 'Header', 'Common Link', 'NYUHome Login',0,true]);">NYUHome Login</a>
+             </p>
+            </div>
+            <div class="utilsLeft"></div>
+            <p class="utilsLinks">
+					<a href="/content/nyu/en/students.html" onclick="_gaq.push(['_trackEvent', 'Header', 'Common Link', 'Students',0,true]);">Students</a>									<span class="utilsPipe">|</span>
+<a href="/content/nyu/en/faculty.html" onclick="_gaq.push(['_trackEvent', 'Header', 'Common Link', 'Faculty',0,true]);">Faculty</a>									<span class="utilsPipe">|</span>
+<a href="/content/nyu/en/alumni.html" onclick="_gaq.push(['_trackEvent', 'Header', 'Common Link', 'Alumni',0,true]);">Alumni</a>									<span class="utilsPipe">|</span>
+<a href="/content/nyu/en/employees.html" onclick="_gaq.push(['_trackEvent', 'Header', 'Common Link', 'Employees',0,true]);">Employees</a>									<span class="utilsPipe">|</span>
+<a href="/content/nyu/en/community.html" onclick="_gaq.push(['_trackEvent', 'Header', 'Common Link', 'Community',0,true]);">Community</a>
+
+            </p><div class="utilsRight"></div><!--end .utilsLinks--></div>
+
+							
+				<!-- DROP DOWNS -->
+				<div class="nyuDropdowns">
+<ul id="dropDowns">
+    <li id="schools">
+        <a class="downArrow" href="">Schools</a>
+        <ul id="schoolslist">
+            <li class="bg first"><a href="http://as.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Arts and Science',0,true]);">Arts and Science</a></li>
+            <li class=""><a href="http://cas.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'College of Arts and Science',0,true]);">College of Arts and Science</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/dental/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'College of Dentistry',0,true]);">College of Dentistry</a></li>
+            <li class=""><a href="http://publichealth.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'College of Global Public Health',0,true]);">College of Global Public Health</a></li>
+            <li class="bg"><a href="http://nursing.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'College of Nursing',0,true]);">College of Nursing</a></li>
+            <li class=""><a href="http://www.cims.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Courant Institute of Mathematical Sciences',0,true]);">Courant Institute of Mathematical Sciences</a></li>
+            <li class="bg"><a href="http://gallatin.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Gallatin School of Individualized Study',0,true]);">Gallatin School of Individualized Study</a></li>
+            <li class=""><a href="http://gsas.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Graduate School of Arts and Science',0,true]);">Graduate School of Arts and Science</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/gsas/dept/fineart/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Institute of Fine Arts',0,true]);">Institute of Fine Arts</a></li>
+            <li class=""><a href="http://www.nyu.edu/isaw/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Institute for the Study of the Ancient World',0,true]);">Institute for the Study of the Ancient World</a></li>
+            <li class="bg"><a href="http://www.stern.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Leonard N. Stern School of Business',0,true]);">Leonard N. Stern School of Business</a></li>
+            <li class=""><a href="http://www.liberalstudies.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Liberal Studies Program',0,true]);">Liberal Studies Program</a></li>
+            <li class="bg"><a href="http://nyuad.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'NYU Abu Dhabi',0,true]);">NYU Abu Dhabi</a></li>
+            <li class=""><a href="http://shanghai.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'NYU Shanghai',0,true]);">NYU Shanghai</a></li>
+            <li class="bg"><a href="http://www.poly.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Polytechnic School of Engineering',0,true]);">Polytechnic School of Engineering</a></li>
+            <li class=""><a href="http://wagner.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Robert F. Wagner Graduate School of Public Service',0,true]);">Robert F. Wagner Graduate School of Public Service</a></li>
+            <li class="bg"><a href="http://www.sps.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'School of Professional Studies',0,true]);">School of Professional Studies</a></li>
+            <li class=""><a href="http://www.law.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'School of Law',0,true]);">School of Law</a></li>
+            <li class="bg"><a href="http://school.med.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'School of Medicine',0,true]);">School of Medicine</a></li>
+            <li class=""><a href="http://www.nyu.edu/socialwork/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Silver School of Social Work',0,true]);">Silver School of Social Work</a></li>
+            <li class="bg"><a href="http://steinhardt.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Steinhardt School of Culture, Education, and Human Development',0,true]);">Steinhardt School of Culture, Education, and Human Development</a></li>
+            <li class=""><a href="http://www.tisch.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'Schools', 'Tisch School of the Arts',0,true]);">Tisch School of the Arts</a></li>
+        </ul>
+    </li>
+
+    <li id="quickLinks">
+        <a class="downArrow" href="">QuickLinks</a>
+        <ul id="quickLinkslist">
+            <li class="bg first"><a href="http://www.nyu.edu/registrar/calendars/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Academic Calendars',0,true]);">Academic Calendars</a></li>
+            <li class=""><a href="http://www.nyu.edu/about/leadership-university-administration.html" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Administrative Units',0,true]);">Administrative Units</a></li>
+            <li class="bg"><a href="http://home.nyu.edu/academics/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Albert',0,true]);">Albert</a></li>
+            <li class=""><a href="http://www.nyu.edu/about/working-at-nyu/apply-for-jobs.html" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Apply for Jobs',0,true]);">Apply for Jobs</a></li>
+            <li class="bg"><a href="http://www.gonyuathletics.com/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Athletics',0,true]);">Athletics</a></li>
+            <li class=""><a href="http://www.bookstores.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Bookstores',0,true]);">Bookstores</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/bursar" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Bursar',0,true]);">Bursar</a></li>
+            <li class=""><a href="http://www.nyu.edu/footer/map.html" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Campus Map',0,true]);">Campus Map</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/life/resources-and-services/employment-and-careerdevelopment.html" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Career Development',0,true]);">Career Development</a></li>
+            <li class=""><a href="http://www.nyu.edu/life/safety-health-andwellness/info-alerts.html" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Emergencies',0,true]);">Emergencies</a></li>
+            <li class="bg"><a href="http://events.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Events',0,true]);">Events</a></li>
+            <li class=""><a href="http://www.nyu.edu/giving/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Giving to NYU',0,true]);">Giving to NYU</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/life/living-at-nyu.html" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Housing',0,true]);">Housing</a></li>
+            <li class=""><a href="http://www.nyu.edu/its/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'ITS',0,true]);">ITS</a></li>
+            <li class="bg"><a href="http://library.nyu.edu/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Libraries',0,true]);">Libraries</a></li>
+            <li class=""><a href="http://www.nyu.edu/about/news-publications/news.html" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'News',0,true]);">News</a></li>
+            <li class="bg"><a href="http://nyubook.collegestoreonline.com/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'NYU Apparel',0,true]);">NYU Apparel</a></li>
+            <li class=""><a href="http://www.nyu.edu/about/policies-guidelines-compliance.html" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Policies',0,true]);">Policies</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/public.safety/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Public Safety',0,true]);">Public Safety</a></li>
+            <li class=""><a href="http://www.nyu.edu/registrar/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Registrar',0,true]);">Registrar</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/shc/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Student Health Center',0,true]);">Student Health Center</a></li>
+            <li class=""><a href="http://www.nyu.edu/life/resources-and-services.html" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Student Resources',0,true]);">Student Resources</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/999/" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'QuickLinks', 'Wellness Exchange',0,true]);">Wellness Exchange</a></li>
+        </ul>
+    </li>
+
+    <li id="az">
+        <a class="downArrow" href="">A-Z</a>
+        <ul id="azlist">
+            <li class="bg first"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=A" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'A',0,true]);">A</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=B" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'B',0,true]);">B</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=C" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'C',0,true]);">C</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=D" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'D',0,true]);">D</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=E" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'E',0,true]);">E</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=F" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'F',0,true]);">F</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=G" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'G',0,true]);">G</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=H" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'H',0,true]);">H</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=I" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'I',0,true]);">I</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=J" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'J',0,true]);">J</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=K" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'K',0,true]);">K</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=L" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'L',0,true]);">L</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=M" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'M',0,true]);">M</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=N" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'N',0,true]);">N</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=O" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'O',0,true]);">O</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=P" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'P',0,true]);">P</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=Q" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'Q',0,true]);">Q</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=R" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'R',0,true]);">R</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=S" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'S',0,true]);">S</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=T" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'T',0,true]);">T</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=U" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'U',0,true]);">U</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=V" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'V',0,true]);">V</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=W" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'W',0,true]);">W</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=X" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'X',0,true]);">X</a></li>
+            <li class="bg"><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=Y" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'Y',0,true]);">Y</a></li>
+            <li class=""><a href="http://www.nyu.edu/AZ/SearchResults.html?alphabet=Z" onclick="_gaq.push(['_trackEvent', 'NYU Dropdown Menu', 'A-Z', 'Z',0,true]);">Z</a></li>
+        </ul>
+    </li>
+
+</ul></div>
+	
+			</div>
+			<!-- END UTILS (center) -->									
+		</div>
+		<!-- END UTILITIES CONTAINER -->
+
+
+		<!-- BEGIN NYU LOGO AND SEARH BOX -->
+		<div class="nyuLogoContainer">			
+			<!-- LOGO -->
+			<div class="nyuTorchLogo">
+<div class="nyuLogo" title="New York University Homepage"><a href="/nyu/en.html"><span class="offLeft">New York University</span></a></div></div>
+
+			
+			<!-- SEARCH -->
+			<div class="nyuSearch">
+<form id="searchForm" action="/content/nyu/en/search.html" method="get">
+<div id="searchBar">					
+	<label for="searchField" class="offLeft">Search NYU</label>
+	<input type="text" id="searchField" name="search" value="Search..." />					
+</div>
+
+<button id="searchBtn" type="submit"></button>
+
+<ul id="searchTypes" style="display:none;">
+	<li><a class="searchTypeSelected" href="/content/nyu/en/search.html">Pages</a><span class="searchTypePipe">|</span></li>
+	<li><a href="/content/nyu/en/search.directory.html">People</a></li>
+</ul>					
+</form></div>
+			
+		</div>
+		<!-- END NYU LOGO AND SEARH BOX -->
+
+
+		<!-- MAIN NAV -->
+		<div class="nyuMainnav">
+        <!-- MAIN NAV -->
+        <div class="mainNav">
+            <h6 class="offLeft">Main Navigation</h6>
+            <ul id="nav" title="">
+				<li class="about"><a title="About NYU" href="/content/nyu/en/about.html">About NYU</a></li>
+				<li class="admissions"><a title="Admissions" href="/content/nyu/en/admissions.html">Admissions</a></li>
+				<li class="academics"><a title="Academics" href="/content/nyu/en/academics.html">Academics</a></li>
+				<li class="life"><a title="University Life" href="/content/nyu/en/life.html">University Life</a></li>
+				<li class="research"><a title="Research" href="/content/nyu/en/research.html">Research</a></li>
+				<li class="global"><a title="Global" href="/content/nyu/en/global.html">Global</a></li>
+
+
+    </ul>
+</div><!--end #mainNav--></div>
+
+		
+	</div>
+<!-- END HEADER CONTAINER -->
+            
+            
+            <div class="nyuSubnav">
+                <div id="breadCrumbs"> </div>
+            </div>
+            
+
+            
+            <script type="text/javascript" src="/common/js/alerts.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		getAlerts('/common/alerts/admin/alerts.response.html');
+	});
+	</script>
+<div id="alertsContainer"></div>
+            
+
+            
+<!-- BEGIN CONTENT WRAPPER -->		
+<div id="contentWrapper">	
+	<div class="quintBox">
+		<div class="nyuTitle pageTitle">
+<h1>Search</h1></div>
+	
+		<div class="parsys quintBox"><div class="search section">
+
+
+
+<style type="text/css">
+    @import url("/common/css/search.css");
+</style>
+<!--ldapQuery:-->
+<div class="quadBox rightBorder">
+    
+    <div id="searchForm">
+        <div id="searchMainOuter">
+            <form action="/content/nyu/en/search.directory.html" id="ldapSearchForm">
+                
+                <input type="button" id="submitForm" value="Search">
+                <div id="searchMainInner">
+                    <div id="searchMain">
+                        
+                        
+                        <input id="searchEntry" type="text">
+                    </div>
+                </div>
+                <input type="hidden" name="search" id="searchQuery" value=""/>
+            </form>
+        </div>
+        
+        <ul id="locationSelection">
+            <li>Abu Dhabi</li>
+            <li>Accra</li>
+            <li>Berlin</li>
+            <li>Buenos Aires</li>
+            <li>Florence</li>
+            <li>London</li>
+            <li>Madrid</li>
+            <li>New York</li>
+            <li>Paris</li>
+            <li>Prague</li>
+            <li>Shanghai</li>
+            <li>Singapore</li>
+            <li>Sydney</li>
+            <li>Tel Aviv</li>
+            <li>Washington, DC</li>
+        </ul>
+    </div>
+    
+    <p><strong>Note:</strong> The NYU Directory contains name, address, e-mail and other information for faculty (current and retired), staff, students who 
+    choose to be included, and departments. If you are a student and wish to opt-in or opt-out of this directory, 
+    visit <a href="https://start.nyu.edu/">NYU Start</a>. All qualified community members can also update certain 
+    sections of their profiles on that site.</p><p>For more information about the NYU Directory, including instructions on how to update 
+    all parts of your profile, visit <a href="http://www.nyu.edu/its/directory/">http://www.nyu.edu/its/directory/</a>.
+    </p>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="singleBox">
+	<ul id="searchNav" title="NYU Search Navigation">
+		<!-- <li class="navitem1"><a href="/content/nyu/en/search.directory.html">All Results</a></li> -->
+		
+		
+		
+		
+			<li class="navitem2"><a href="/search.html;jsessionid=d949d947-7d67-4e85-bb31-c14ca1400371?search=">Pages</a></li>
+		
+		
+		
+		
+		
+			<li class="navitem3" selected><strong><a href="/search.directory.html;jsessionid=d949d947-7d67-4e85-bb31-c14ca1400371?search=">People</a></strong></li>
+		
+		
+		
+		
+		<!-- <li class="navitem4"><a href="/content/nyu/en/search.directory.html?type=events">Events</a></li> -->
+	</ul>
+</div>
+<script>
+    
+        $(document).ready(onReady); 
+    
+             function addTerm(text,type) {
+                 text = text.replace(/[><]/g,"");
+                 var newSearch = $("<span class='searchTerm' searchType='"+type+"'>"+text+"</span>");
+                 $("#searchEntry").before(newSearch)
+    
+            $(newSearch).mouseup(removeTerm);       
+            $(newSearch).mouseenter(hoverOn);
+            $(newSearch).mouseleave(hoverOff);
+            updateSearchTerms();
+            return true;
+        }
+
+    
+        function removeTerm(e) {
+            if (this.parentNode) {
+                $(this).remove();
+                updateSearchTerms();
+            }
+        }
+        
+                
+        function getTextContent(node) {
+            var result = node.textContent;
+            if (result !== undefined) return result;
+            return node.innerText;
+        }
+        
+        var MAX_LOCATIONS=3;
+        var MAX_NAMES=3;
+    
+             function updateSearchTerms() {
+                 var regenerate = true;
+                 while (regenerate) {
+                     regenerate = false;
+                     var query="";
+                     var locations=new Array();
+                     $("#locationSelection li").each(function(){
+                         $(this).removeClass('selected')
+                     });
+                     $("#searchMain span").each(function() {
+                         var type = this.attributes.searchType.value;
+                         var value = getTextContent(this);
+                         if (type == "location") {
+                             for (var i=0; i < locations.length; i++) {
+                                 if (getTextContent(locations[i]) == value) {
+                                     $(this).remove();
+                                     return;
+                                 }
+                             }
+                             $("#locationSelection li").each(function(){
+                                 if ($(this).text() == value) {
+                                     $(this).addClass('selected')
+                                 }
+                             });
+                             locations[locations.length]=this;
+                         }
+    
+                    //                    if (locations.length > MAX_LOCATIONS) {
+                    //                        $(locations[0]).remove();
+                    //                        locations=locations.splice(0,1);
+                    //                        regenerate=true;
+                    //                    }
+                    if (query != "") query += "&";
+                    query += type + "=" + value;
+                });
+                if (locations.length > MAX_LOCATIONS) {
+                    $(locations[MAX_LOCATIONS]).remove();
+                    alert("You may only select up to "+MAX_LOCATIONS+" locations per search.");
+                    regenerate=true;
+                }
+            }
+            $("#searchQuery").val(query);
+        }
+
+    
+        function startSearchEntry(e) {
+            var textField = $(e.target);
+            if (textField.hasClass('searchInactive')) {
+                textField.removeClass('searchInactive');
+                textField.val("");
+            }
+        }
+
+    
+        function endSearchEntry(e) {
+            var field = $(e.target);
+            if (!field.hasClass('searchInactive')) {
+                var val = $(e.target).val();
+                if (val && "" != val.trim()) {
+                    addTerm(val,"name");
+                }
+                field.attr("readonly","true");
+            }
+            resetSearchBox();
+            return false;
+        }
+    
+    
+        function resetSearchBox() {
+            var field = $("#searchEntry");
+            field.removeAttr("readonly");
+            if (!field.hasClass('searchInactive')) {
+                field.addClass('searchInactive');
+                field.val("Enter search criteria");
+                field.blur();
+            }
+        }
+    
+    
+        function focusOnSearch() {
+            var field = $("#searchEntry");
+            field.focus();
+        }
+    
+    
+        function submitForm() {
+            $("#ldapSearchForm").submit();
+            return true;
+        }
+    
+        function hoverOn() {$(this).addClass('buttonHover');}
+        function hoverOff() {$(this).removeClass('buttonHover');}
+
+    
+        function onReady() {
+            $(".searchTerm").mouseup(removeTerm);
+            $(".searchTerm").mouseenter(hoverOn);
+            $(".searchTerm").mouseleave(hoverOff);
+            var locations = $("#locationSelection li");
+            locations.mouseup(function (e) {addTerm($(e.target).text(),"location")});
+            locations.mouseenter(hoverOn);
+            locations.mouseleave(hoverOff);
+            var searchEntry = $("#searchEntry");
+            searchEntry.focus(startSearchEntry);
+            searchEntry.blur(endSearchEntry);
+            resetSearchBox();
+            searchEntry.keyup(function(e) {
+                if (e.which== 13 || e.which== 10) {
+                    endSearchEntry(e);
+                    submitForm();
+                }
+            });
+            $("input#submitForm").mousedown(submitForm);
+            $("#ldapSearchForm").submit(function() {
+                endSearchEntry({target:$("#searchEntry")[0]});
+                updateSearchTerms();            
+            });
+            $("#searchMainOuter").click(focusOnSearch);
+            updateSearchTerms();
+        }
+        
+// fix for IE8        
+if(typeof String.prototype.trim !== 'function') {   String.prototype.trim = function() {     return this.replace(/^\s+|\s+$/g, '');    } }         
+</script></div>
+
+</div>
+
+	</div>
+	<!-- END quintBox -->				
+</div>
+<!-- END CONTENT WRAPPER -->	
+
+            
+
+<!-- Begin Footer -->
+<div class="nyuFooter">
+
+
+
+
+
+<script type="text/javascript" src="/common/js/feedback.js"></script>
+
+<!-- DIVIDER -->
+<hr class="invisible" />
+
+    <!-- FOOTER -->
+    <div id="footerContainer">
+        <h6 class="offLeft">NYU Footer</h6>
+        <ul>
+            <li class="first"><a href="/nyu/en/search.html" onclick="_gaq.push(['_trackEvent', 'Footer', 'Common Link', 'Search',0,true]);">Search</a></li>
+            <li><a href="/nyu/en/search.directory.html" onclick="_gaq.push(['_trackEvent', 'Footer', 'Common Link', 'Directory',0,true]);">Directory</a></li>
+            <li><a href="/nyu/en/footer/map.html" onclick="_gaq.push(['_trackEvent', 'Footer', 'Common Link', 'Campus Map',0,true]);">Campus Map</a></li>
+            <li><a href="http://events.nyu.edu" onclick="_gaq.push(['_trackEvent', 'Footer', 'Common Link', 'Events',0,true]);">Events</a></li>
+            <li><a href="/nyu/en/footer/contact-us.html" onclick="_gaq.push(['_trackEvent', 'Footer', 'Common Link', 'Contact Us',0,true]);">Contact Us</a></li>
+            <li><a href="/nyu/en/footer/site-map.html" onclick="_gaq.push(['_trackEvent', 'Footer', 'Common Link', 'Site Map',0,true]);">Site Map</a></li>
+            <li><a href="/nyu/en/footer/copyright-and-fair-use.html" onclick="_gaq.push(['_trackEvent', 'Footer', 'Common Link', 'Copyright and Fair Use',0,true]);">Copyright and Fair Use</a></li>
+            <li class="last"><a href="http://www.nyu.edu/scripts/feedback/forms/feedback.html?pagePath=%2fcontent%2fnyu%2fen%2fsearch&amp;pageTitle=Search" onclick="_gaq.push(['_trackEvent', 'Footer', 'Common Link', 'Feedback',0,true]); return popitup(this.href)">Feedback</a></li>
+        </ul>
+        <p id="copyright">Unless otherwise noted, all content copyright New York University. All rights reserved.<br />Designed by The Office of Web Communications</p>
+
+      <!--social footer links-->
+      <ul id="social">
+         <li id="btn-social-instagram"><a href="http://instagram.com/nyuniversity" target="_blank" title="NYU on Instagram" onclick="_gaq.push(['_trackSocial', 'Instagram', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Instagram',0,true]);"><span class="fa fa-instagram"></span></a></li>
+         <li id="btn-social-tumblr"><a href="http://nyuniversity.tumblr.com/" target="_blank" title="NYU on Tumblr" onclick="_gaq.push(['_trackSocial', 'Tumblr', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Tumblr',0,true]);"><span class="pe-so-tumblr"></span></a></li>
+         <li id="btn-social-youtube"><a href="http://www.youtube.com/nyu" target="_blank" title="NYU on YouTube" onclick="_gaq.push(['_trackSocial', 'YouTube', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'YouTube',0,true]);"><span class="fa fa-youtube-play"></span></a></li>
+         <li id="btn-social-foursquare"><a href="https://foursquare.com/nyuniversity" target="_blank" title="NYU on Foursquare" onclick="_gaq.push(['_trackSocial', 'foursquare', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Foursquare',0,true]);"><span class="fa fa-foursquare"></span></a></li>
+         <li id="btn-social-linkedin"><a href="http://www.linkedin.com/company/3159?trk=tyah" target="_blank" title="NYU on LinkedIn" onclick="_gaq.push(['_trackSocial', 'LinkedIn', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'LinkedIn',0,true]);"><span class="pe-so-linkedin"></span></a></li>
+         <li id="btn-social-facebook"><a href="http://www.facebook.com/nyu" target="_blank" title="NYU on Facebook" onclick="_gaq.push(['_trackSocial', 'Facebook', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Facebook',0,true]);"><span class="pe-so-facebook"></span></a></li>
+         <li id="btn-social-twitter"><a href="http://www.twitter.com/nyuniversity" target="_blank" title="NYU on Twitter" onclick="_gaq.push(['_trackSocial', 'Twitter', 'footer visit']); _gaq.push(['_trackEvent', 'Social', 'Footer Link', 'Twitter',0,true]);"><span class="fa fa-twitter"></span></a></li>
+      </ul>
+   </div>
+   <!-- END FOOTER -->
+
+    <script type="text/javascript"> Cufon.now(); </script>
+</div>
+
+<!-- End Footer --> 
+
+        </div>
+        <!-- Urchin and Optional Remarketing Code (publisher only) -->
+        
+            
+
+
+<!-- Begin HTML stats included-->
+<div id='analyticsSnippet'>
+
+</div>
+<!-- End HTML stats -->
+            <script type="text/javascript">
+var topUrl = window.top.location.href;
+if(topUrl.indexOf('\/cf#\/') == -1){
+    var UH = UH || [];
+    UH.push([ '_trackPageview' ]);
+    (function(d){
+        var s = d.createElement('script'); s.src = '/common/js/uh.v72.js';
+        d.body.appendChild(s);
+    })
+    (document)
+}
+</script>
+        
+    </body>
+</html>
